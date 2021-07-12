@@ -55,8 +55,23 @@ func testVariables()  {
 	fmt.Println("Second Variable :", var2)
 }
 
+func testInOut() {
+	// Display a message
+	fmt.Println("One Percent")
+	fmt.Println("Enter your Name :")
+
+	var name string
+
+	// Asks for Input
+	// Stored the Input in the Variable "name"
+	fmt.Scanln(& name)
+
+	fmt.Println("Welcome to the One Percent Club :", name)
+}
+
 func main() {
 	//DataTypes()
 	//Constants()
-	testVariables()
+	//testVariables()
+	testInOut()
 }
