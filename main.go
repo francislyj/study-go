@@ -41,8 +41,22 @@ func Constants()  {
 
 }
 
+func testVariables()  {
+	// Declaring and Initializing Variable
+	var var1 = 5
+	var var2 = 19
+
+	// Changing Variable Value
+	var1 = 20
+	var2 = 30
+
+	// Print Values
+	fmt.Println("First Variable :", var1)
+	fmt.Println("Second Variable :", var2)
+}
+
 func main() {
 	//DataTypes()
-
-	Constants()
+	//Constants()
+	testVariables()
 }
