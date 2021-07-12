@@ -32,8 +32,17 @@ func DataTypes() {
 
 func Constants()  {
 
+	// Declaring and Initializing Constant
+	const con1 = 5
+	const con2 = 20
+
+	fmt.Println("First Constant :", con1)
+	fmt.Println("Second Constant :", con2)
+
 }
 
 func main() {
-	DataTypes()
+	//DataTypes()
+
+	Constants()
 }
