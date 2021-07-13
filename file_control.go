@@ -7,6 +7,8 @@ import (
 )
 
 func main() {
+	var a int = 5
+	fmt.Println(a)
 	//file, err := os.Create("hello.txt")
 	//
 	//if err != nil {

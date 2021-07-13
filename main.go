@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"container/list"
+	"fmt"
+)
 
 func Comment() {
 	// this is a single line comment
@@ -73,5 +76,56 @@ func main() {
 	//DataTypes()
 	//Constants()
 	//testVariables()
-	testInOut()
+	//testInOut()
+
+	var str = "aaa" + "bbb"
+	result := fmt.Sprintf("hello %s", str)
+	fmt.Println(result)
+
+	var a complex64 = 28
+	fmt.Println(a)
+
+	var b int8 = 8
+	var c float32 = float32(b)
+	fmt.Println(c)
+
+	var arr1 []int = []int{1, 2, 3}
+	fmt.Println(arr1)
+
+
+
+	var p1 *int
+	p1 = new(int)
+	//*p1 = 10
+	fmt.Println(*p1)
+
+	var myList = []string{"🍌", "🍉"}
+	fmt.Println(myList)
+
+	h := list.New()
+	h.PushFront("aa")
+
+	r := &Rect{width: 20, height: 30}
+	hello2(r)
+}
+
+func hello2(ir IR) {
+	fmt.Println(ir.getWidth())
+}
+
+type IR interface {
+	getWidth() int
+}
+
+type Rect struct {
+	width int
+	height int
+}
+
+func (r Rect) getWidth() int {
+	return r.width
+}
+
+func Add(num1, num2 int) int {
+	return num1 + num2
 }
